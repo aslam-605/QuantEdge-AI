@@ -1,0 +1,61 @@
+{
+  "trained_at": "2026-11-04T07:01:50.080826+00:00",
+  "model_type": "RandomForestClassifier",
+  "features": [
+    "ret_1",
+    "ret_3",
+    "vol_change",
+    "atr_14",
+    "rsi_14",
+    "macd",
+    "ema_diff_9_20",
+    "sma_diff_20_50",
+    "price_position_boll",
+    "hl_range",
+    "volume_ma_ratio"
+  ],
+  "target_thresholds": {
+    "bear": -0.03,
+    "bull": 0.03
+  },
+  "lookahead_days": 5,
+  "training_timestamp": "2026-11-04T07:01:50.080826+00:00",
+  "training_start": "2019-11-10 18:30:00+00:00",
+  "training_end": "2026-10-27 18:30:00+00:00",
+  "rows_used": 1709,
+  "walkforward_f1": 0.8581063068146232,
+  "class_counts": {
+    "NEUTRAL": 1474,
+    "BULLISH": 133,
+    "BEARISH": 102
+  },
+  "window": {
+    "lookback": 60,
+    "lookahead": 5
+  },
+  "metrics": {
+    "accuracy": 0.9007029876977153,
+    "precision": 0.8521868915481424,
+    "recall": 0.9007029876977153,
+    "f1": 0.8581063068146232,
+    "evaluation": "walk-forward out-of-sample"
+  },
+  "confusion_matrix": [
+    [
+      0,
+      1,
+      48
+    ],
+    [
+      2,
+      2,
+      60
+    ],
+    [
+      2,
+      0,
+      1023
+    ]
+  ],
+  "model_path": "D:\\spiders\\ML\\project\\QuantEdge-AI-Minimal\\models\\quantedge_rf_v2.joblib"
+}

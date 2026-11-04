@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Streamlit
+.session_state
+.logs
+
+# SQLite
+data/*.db
+data/*.db-journal
+data/*.sqlite3
+
+# ML models
+models/*.pkl
+models/*.joblib
+models/*.h5
+!models/README.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Application logs
+logs/
+*.log
